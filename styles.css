@@ -1,8 +1,21 @@
 
-.card {
-    background-color: white;
-}
-
 body {
     background-color: #eceef0;
+    color: lights;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;        /* all images set to 100% of parent width */
+  }
+
+/* character card */
+.card {
+    background-color: white;
 }
