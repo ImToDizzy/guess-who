@@ -28,11 +28,15 @@ img {
     grid-template-columns: 5fr 5fr 5fr 5fr 5fr; /* changed to fractions, percent was wrong because didn't account for column gap */
     column-gap: 20px;
     row-gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /* character card */
 .card {
     background-color: white;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .mystery {
