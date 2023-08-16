@@ -17,7 +17,7 @@ img {
 
 .cards {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr; /* changed to fractions, percent was wrong because didn't account for column gap */
     column-gap: 20px;
     row-gap: 20px;
 }
