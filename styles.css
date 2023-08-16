@@ -34,3 +34,9 @@ img {
 .card {
     background-color: white;
 }
+
+.mystery {
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+}
