@@ -83,6 +83,7 @@ let characters = [
 ]
 
 setMysteryCard()
+populateCards()
 
 function toggleEliminated(element){
 
@@ -92,25 +93,29 @@ function toggleEliminated(element){
 }
 
 function selectRandomCard() {
+
     let rand = Math.floor(Math.random() * 20)
     return rand;
+    
 }
 
 function setMysteryCard(){
+
     let randomCharacter = selectRandomCard()
-    console.log(randomCharacter)
     let mysteryImg = document.querySelector('.mystery-image')
     mysteryImg.src = 'images/' + characters[randomCharacter].image
+    
     let mysteryName = document.querySelector('.mystery-name')
     mysteryName.innerHTML = characters[randomCharacter].name
+
 }
 
 function populateCards(){
+
     let cards = document.querySelector('.cards')
-    console.log(cards)
 
     for(let i = 0; i < characters.length; i++){
         cards.innerHTML += '<div class="card"><img src="images/' + characters[i].image + '"/><span>' + characters[i].name + '</span></div>'
     }
+
 }
-populateCards()
