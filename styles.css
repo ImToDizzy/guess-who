@@ -1,19 +1,15 @@
-
-html {
+body {
     font-family: Verdana;
     font-size: 15px;
-}
-
-body {
-    background-color: #eceef0;
+    background-color: #F0EFEC;
 }
 
 .wrap {
     width: 900px;
     margin-top: 40px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .header {
@@ -24,20 +20,23 @@ body {
 }
 
 img {
-    width: 100%;        /* all images set to 100% of parent width */
+    width: 100%;
+    /* all images set to 100% of parent width */
 }
 
 h2 {
     text-align: center;
 }
+
 .cards {
     display: grid;
-    grid-template-columns: 5fr 5fr 5fr 5fr 5fr; /* changed to fractions, percent was wrong because didn't account for column gap */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* changed to fractions, percent was wrong because didn't account for column gap */
     column-gap: 20px;
     row-gap: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-} 
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 /* character card */
 .card {
