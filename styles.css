@@ -71,3 +71,7 @@ h2 {
     padding: 6px;
     transition: padding .5s;
 }
+
+.eliminated {
+    opacity: 20%;
+}
