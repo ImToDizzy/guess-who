@@ -82,6 +82,8 @@ let characters = [
     }
 ]
 
+setMysteryCard()
+
 function toggleEliminated(element){
 
     console.log('TOGGLE ELIMINATED')
@@ -102,4 +104,13 @@ function setMysteryCard(){
     let mysteryName = document.querySelector('.mystery-name')
     mysteryName.innerHTML = characters[randomCharacter].name
 }
-setMysteryCard()
+
+function populateCards(){
+    let cards = document.querySelector('.cards')
+    console.log(cards)
+
+    for(let i = 0; i < characters.length; i++){
+        cards.innerHTML += '<div class="card"><img src="images/' + characters[i].image + '"/><span>' + characters[i].name + '</span></div>'
+    }
+}
+populateCards()
